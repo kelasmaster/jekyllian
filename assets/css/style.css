@@ -1,0 +1,29 @@
+/* assets/css/style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive Navigation */
+.nav-toggle {
+  display: none; /* Hide on desktop */
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
